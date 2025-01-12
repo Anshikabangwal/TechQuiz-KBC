@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBC</title>
+    <link rel="stylesheet" href="kbcwindow.css">
+</head>
+<body>
+   <div>
+        <div class="vertical"></div>
+        <div class="price">
+            <button>Rs.7 Crore</button><br>
+            <button>Rs.3 Crore</button><br>
+            <button>Rs.1 Crore</button><br>
+            <button>Rs.50,00,000</button><br>
+            <button>Rs.25,00,000</button><br>
+            <button>Rs.12,50,000</button><br>
+            <button>Rs.6,40,000</button><br>
+            <button>Rs.3,20,000</button><br>
+            <button>Rs.1,60,000</button><br>
+            <button>Rs.80,000</button><br>
+            <button>Rs40,000</button><br>
+            <button>Rs.20,000</button><br>
+            <button>Rs.10,000</button><br>
+            <button>Rs.5,000</button><br>
+      </div>
+      <div class="lifeline">
+            <button>50-50</button>
+            <button>1</button>
+            <button>SWAP</button>
+            <button>QUIT</button>
+        </div>
+        <div class="question">
+            <button></button>
+        </div>
+        <div class="options">
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>  
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h2>Thank You for Playing!</h2>
+                <p>You have earned Rs.<span id="earnedAmount"></span>.</p>
+                <button id="okButton">OK</button>
+            </div>
+        </div>
+   </div>
+<script src="script1.js"></script>
+</body>
+</html>

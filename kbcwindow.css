@@ -1,0 +1,155 @@
+/* kbcwindow.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(kbcimage1.jpeg);
+    background-color: rgba(207, 135, 207, 0.521);
+}
+
+div.question button {
+    width: 72.3%;
+    height: 100px;
+    background-color: rgb(0, 0, 139);
+    color: #ffffff;
+    border: solid rgb(255, 223, 0) 5px;
+    font-size:18px;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    margin-left: 12px;
+    cursor: pointer;
+    position: relative;
+}
+
+div.options button {
+    width: 36%;
+    height: 65px;
+    background-color: rgb(0, 0, 139);
+    color: #ffffff;
+    border: rgb(255, 233, 0) solid;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+    position: relative;
+    cursor: pointer;
+}
+div.options button:hover {
+    background-color: orange;
+    color: black;
+}
+
+div.price {
+    position: fixed;
+    top: 0px;
+    right: 180px;
+}
+
+div.price button {
+    background-color: purple;
+    color: white;
+    width: 200%;
+    padding: 4px 4.5px;
+    margin: 5.5px; 
+    font-size: 20px;
+    border: solid rgb(255, 223, 0) 2px;
+    position: relative;
+}
+
+.vertical {
+    border-right: 5px solid rgb(255, 223, 0);
+    height: 100%;
+    position: absolute;
+    right: 25%;
+    top: 0;
+}
+
+.lifeline {
+    padding: 15px;
+    text-align: center;
+    margin-top: 80px;
+    width: 80%;
+    position: relative;
+    height: auto;
+}
+
+div.lifeline button {
+    background-color: rgb(0, 0, 139);
+    color: #fff;
+    border: rgb(255, 233, 0) solid;
+    padding: 0;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.lifeline button:hover {
+    background-color: orange;
+    color: black;
+}
+
+.glow {
+    animation: glow-animation 1s infinite alternate;
+}
+
+@keyframes glow-animation {
+    0% {
+        box-shadow: 0 0 10px rgba(218, 165, 32, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(218, 165, 32, 0.7);
+    }
+}
+/* CSS styles for popup */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    font-size:20px;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    text-align: center;
+}
+
+#okButton{
+    /* display: block; */
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 300px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
